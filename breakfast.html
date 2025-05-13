@@ -1,0 +1,323 @@
+<html>
+    <head>
+
+      <title>Coffee Shop</title>
+      
+       <style>
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+html{scroll-behavior:smooth}
+
+
+/*------------------------------------Header----------------------------*/
+
+header {
+  background-color: #7b3f00;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  position: sticky;
+  top: 0px;
+}
+
+/*---------------------------------Navigation bar----------------------*/
+
+nav{
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  position: sticky;
+  top: 95px;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  
+}
+
+
+nav ul{
+  padding: 0 100px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+nav ul li{
+  list-style-type:none;
+  display: inline-block;
+  padding: 0 15px;
+}
+
+nav ul li a{
+  display: block;
+  padding: 0 20px;
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+nav ul li a:hover{
+  color:#fff;
+  background-color: #000;
+}
+
+nav .back{
+  border-radius: 20px;
+  background-color: #999696;
+  position: absolute;
+  left: 10px;
+}
+
+nav .back a{
+  color: #fff;
+}
+
+nav .back a:hover{
+  color: #000;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+
+/*---------------------------------Pancakes------------------------------------*/
+
+.pan{
+width: 100%;
+height: 100vh;
+padding-top: 40px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+.pan .pan_image img{
+width: 650px;
+box-shadow: 10px 10px 25px  #a2a1a0;
+}
+
+.pan .pan_tag h1{
+font-size: 70px;
+margin-bottom: 30px;
+margin-top:90px ;
+}
+
+.pan .pan_tag p{
+  font-size: 20px;
+width: 650px;
+text-align: justify;
+line-height: 23px;
+margin-bottom: 200px;
+}
+
+/*----------------------------------French Tost--------------------------------*/
+
+.tost{
+width: 100%;
+height: 100vh;
+padding-top: 40px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+.tost .tost_image img{
+width: 650px;
+box-shadow: 10px 10px 25px  #a2a1a0;
+}
+
+.tost .tost_tag h1{
+font-size: 70px;
+margin-bottom: 30px;
+}
+
+.tost .tost_tag p{
+  font-size: 20px;
+width: 650px;
+text-align: justify;
+line-height: 23px;
+margin-bottom: 200px;
+}
+
+/*------------------------------Stuffed Omelet--------------------------------*/
+
+.omlet{
+width: 100%;
+height: 100vh;
+padding-top: 40px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+.omlet .omlet_image img{
+width: 650px;
+box-shadow: 10px 10px 25px  #a2a1a0;
+}
+
+.omlet .omlet_tag h1{
+font-size: 70px;
+margin-bottom: 30px;
+}
+
+.omlet .omlet_tag p{
+  font-size: 20px;
+width: 650px;
+text-align: justify;
+line-height: 23px;
+margin-bottom: 200px;
+}
+
+/*------------------------------Blueberry Muffins--------------------------------*/
+
+.blue{
+width: 100%;
+height: 100vh;
+padding-top: 40px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+.blue .blue_image img{
+width: 650px;
+box-shadow: 10px 10px 25px 10px #71706f;
+}
+
+.blue .blue_tag h1{
+font-size: 70px;
+margin-bottom: 30px;
+}
+
+.blue .blue_tag p{
+  font-size: 20px;
+width: 650px;
+text-align: justify;
+line-height: 23px;
+margin-bottom: 200px;
+}
+
+       </style>
+           </head>
+        <body>
+
+         <!--------------------------------------header-------------------------------->
+
+    <header>
+            <h1>MENU</h1>
+            <p>Your favorite place for Breakfast!</p>
+     </header>
+
+
+     <!-----------------------------------------navbar-------------------------------->
+
+
+     <nav>
+        <ul>
+          <div class="back">
+            <li><a href="menu.html">Back</a></li>
+            </div>
+           <li><a href="web page.html">Home</a></li>           
+           <li><a href="#pan">Pancakes</a></li>
+           <li><a href="#tost">French Tost</a></li>
+           <li><a href="#omlet">Stuffed Omelet</a></li>
+           <li><a href="#blue">Blueberry Muffins</a></li>
+        </ul>
+   </nav>
+
+     <!-------------------------------------Pancakes------------------------------------------>
+
+     <div class="pan" id="pan">
+
+      <div class="pan_image">
+          <img src="pancake.jpg">
+  
+      </div>
+  
+      <div class="pan_tag">
+          <h1>Pancakes and <br>Maple Syrup</h1>
+          <p>
+          
+                 A light colored plate with a stack of pancakes, raspberries, and syrup
+                  Who doesn’t love waking up to the smell of pancakes? There is something about pancakes that suggests that the day is going to be great, especially if you are sharing them with your family.Regardless of how much of a hurry you are in, pancakes is one breakfast that you really do need to take slow. This makes them a fantastic way to slow down and get your day going on the right food, rather than rushing right from the start.
+          </p>
+          
+  
+      </div>
+  
+  </div>
+  
+  <!-----------------------------------French Tost---------------------------------------------->
+
+  <div class="tost" id="tost">
+
+   <div class="tost_image">
+       <img src="french tost.jpg">
+
+   </div>
+
+   <div class="tost_tag">
+       <h1>French Tost</h1>
+       <p>
+      
+           French toast is another nice addition to breakfast. This one is often associated with lazy Sunday mornings, but it can work nice any day, especially as it is relatively fast to prepare.
+          The basic approach involves soaking or dipping bread in a beaten egg mixture and then frying them. There are, of course, many variations depending on the specific recipe that you choose, including the use of milk or cream in the mixture, as well as spices like nutmeg, vanilla, cinnamon or sugar.
+       </p>
+       
+
+   </div>
+
+</div>
+
+      <!----------------------------------Stuffed Omelet-------------------------------------->
+
+      <div class="omlet" id="omlet">
+
+         <div class="omlet_image">
+             <img src="omlet.jpg">
+      
+         </div>
+      
+         <div class="omlet_tag">
+             <h1>Stuffed Omelet</h1>
+             <p>
+              
+                    Omelets come in endless varieties, especially when you are considering the stuffed variety. This type of omelet essentially acts as a sandwich, with the fillings wedged between the two sides of the omelet – although you certainly can’t pick it up and eat it like a sandwich.
+                     Most omelets rely on cheese as some part of their filling, such as mozzarella, cheddar or even feta cheese. Beyond this, fillings can include a wide range of combinations of different meats and vegetables.
+             </p>
+             
+      
+         </div>
+      
+      </div>
+      
+      <!-------------------------------Blueberry Muffins------------------------------------->
+
+      <div class="blue" id="blue">
+
+        <div class="blue_image">
+            <img src="blueberry.jpg">
+     
+        </div>
+     
+        <div class="blue_tag">
+            <h1>Blueberry Muffins</h1>
+            <p>
+              
+              Blueberry muffins are a fairly common anytime food, but they are also a good addition to a breakfast.
+              They are light enough to work well with a cup of coffee for people who don’t like eating very much in the morning. Yet at the same time, a blueberry muffin can be a good way to round off a more hearty breakfast and satisfy any lingering cravings for sweets
+            </p>
+            
+     
+        </div>
+     
+     </div>
+          
+    </body>
+</html>
