@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+  }
+  
+  html{scroll-behavior:smooth}
+  
+  
+  /*------------------------------------Header-------------------------------------*/
+  
+  header {
+    background-color: #7b3f00;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    position: sticky;
+    top: 0px;
+  }
+  
+  /*-----------------------------------Navigation bar------------------------------*/
+  
+  nav{
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    position: sticky;
+    top: 95px;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    
+  }
+  
+  
+  nav ul{
+    padding: 0 100px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+  
+  nav ul li{
+    list-style-type:none;
+    display: inline-block;
+    padding: 0 15px;
+  }
+  
+  nav ul li a{
+    display: block;
+    padding: 0 20px;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: bold;
+    line-height: 50px;
+  }
+  
+  nav ul li a:hover{
+    color:#fff;
+    background-color: #000;
+  }
+  
+  
+  /*-------------------------------Cappaccino-----------------------------------*/
+  
+  .cap{
+  width: 100%;
+  height: 100vh;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  }
+  
+  .cap .cap_image img{
+  width: 600px;
+  box-shadow: 10px 10px 25px  #a2a1a0;
+  }
+  
+  
+  .cap .cap_tag h1{
+  font-size: 70px;
+  margin-bottom: 30px;
+  }
+  
+  .cap .cap_tag p{
+    font-size: 20px;
+  width: 650px;
+  text-align: justify;
+  line-height: 23px;
+  margin-bottom: 200px;
+  }
+  
+  /*----------------------------------Latte-------------------------------*/
+  
+  .latte{
+  width: 100%;
+  height: 100vh;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  }
+  
+  .latte .latte_image img{
+    width: 600px;
+    box-shadow: 10px 10px 25px  #a2a1a0;
+  }
+  
+  .latte .latte_tag h1{
+  font-size: 70px;
+  margin-bottom: 30px;
+  }
+  
+  .latte .latte_tag p{
+    font-size: 20px;
+  width: 650px;
+  text-align: justify;
+  line-height: 23px;
+  margin-bottom: 200px;
+  }
+  
+  /*------------------------------Cold coffee----------------------------*/
+  
+  .cold{
+  width: 100%;
+  height: 100vh;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  }
+  
+  .cold .cold_image img{
+    width: 600px;
+    box-shadow: 10px 10px 25px  #a2a1a0;
+  }
+  
+  .cold .cold_tag h1{
+  font-size: 70px;
+  margin-bottom: 30px;
+  }
+  
+  .cold .cold_tag p{
+    font-size: 20px;
+  width: 650px;
+  text-align: justify;
+  line-height: 23px;
+  margin-bottom: 200px;
+  }
