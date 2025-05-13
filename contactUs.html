@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"  />
+    <style>
+      *{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+.nav{
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  position: sticky;
+  top: 75px;
+  background: #fff;
+  
+  
+}
+
+
+.nav ul{
+  padding: 0 100px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.nav ul li{
+  list-style-type:none;
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.nav ul li a{
+  display: block;
+  padding: 0 20px;
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.nav ul li a:hover{
+  color:#fff;
+  background-color: #000;
+}
+
+
+.nav .back{
+  border-radius: 20px;
+  background-color: #999696;
+  position: absolute;
+  left: 10px;
+}
+
+.nav .back a{
+  color: #fff;
+}
+
+.nav .back a:hover{
+  color: #000;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+/*---------------------------------------Form-----------------------------------*/
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url(contactBg.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 110vh;
+    position: relative;
+    background-repeat: no-repeat;
+}
+header {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  position: sticky;
+  top: 0px;
+}
+
+header h1{
+    font-size: 30px;
+    color: #fff;
+}
+
+section i{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.8);
+    color: black;
+    text-align: center;
+}
+.form{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 50%;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+}
+
+.form .contact-form input{
+    width: 30rem;
+    background-color: transparent;
+    border: 0px;
+    border: transparent;
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid #fff;
+}
+.form .contact-form input ~ span{
+    position: absolute;
+    left: 20px;
+    transition: 0.9s ease-in-out;
+    margin-top: 10px;
+}
+.form .contact-form input:focus ~span{
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+.form .contact-form textarea{
+    width: 30rem;
+    border: 0px;
+    background-color: transparent;
+    margin: 20px;
+    font-size: 17px;
+    border-bottom: 2px solid white;
+}
+.form .contact-form textarea ~ span
+{
+    position: absolute;
+    left: 20px;
+    margin-top: 10px;
+    transition: 0.9s ease-in-out;
+}
+.form .contact-form textarea:focus ~span{
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+.form .contact-form input[type=submit]{
+    background-color: dodgerblue;
+    border: 2px solid dodgerblue;
+    font-size: 18px;
+    width: 50%;
+    height: 40px;
+    margin-top: -5px;
+}
+.form .contact-form input[type=submit]:hover{
+    background-color: transparent;
+    color: dodgerblue;
+}
+
+
+.contact-form span b{
+    color: #fff;
+}
+
+/*---------------------------- Logo ---------------------------------*/
+.wrapper{
+    position: absolute;
+    top: 100px;
+   padding: 30px 200px;
+   
+}
+.wrapper .icon{
+    height: 100px;
+    width: 100px;
+    background-color:#f5f6fa ;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+    line-height: 120px;
+    box-shadow: 1px 4px 2px 2px #0c0702;
+    transition: all 0.2s linear;
+}
+
+.wrapper .icon:hover i{
+    transform: scale(1.4);
+}
+
+.fa-instagram{
+    color: #e84393;
+}
+.fa-facebook{
+    color: #2d17f6;
+}
+.fa-linkedin{
+    color: #0097e6;
+}
+.fa-twitter{
+    color: #0097e6;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+        
+    </header>
+    
+    
+    <div class="nav">
+        <ul>
+            <div class="back">
+                <li><a href="aboutUs.html">Back</a></li>
+                </div>
+           <li><a href="web page.html">Home</a></li>
+        </ul>
+      </div>        
+
+      <!---------------------------------Form----------------------------------->
+
+    
+    <div class="container">   
+        <div class="form">
+            <div class="right">
+              <div class="contact-form">
+                  <input type="text" required >
+                  <span><b>Full Name</b></span>
+              </div>
+  
+              <div class="contact-form">
+                  <input type="E-mail" required>
+                  <span><b>E-mail Id</b></span>
+              </div>
+              <div class="contact-form">
+                  <textarea name="text">
+                    
+                  </textarea>
+                  <span><b> Type your Message....</b></span>
+              </div>
+  
+              <div class="contact-form">
+                  <input type="submit" name="submit">
+              </div>
+              </div>
+            </div>
+          </div>
+
+        <!---------------------------------Logo----------------------------------->
+
+
+           <div class="wrapper">
+           <div class="button1">
+              <div class="icon">
+                <a href="https://instagram.com/rj_.rohit._?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">
+                     <i  class="fa-brands fa-instagram fa-3x"></i>
+                 </a>
+             
+              </div>
+             </div>
+
+         <!----------------------------------------->  
+
+         <div class="button2">
+            <div class="icon">
+              <a href="">
+                   <i class="fa-brands fa-facebook fa-3x"></i>
+               </a>
+             
+            </div>
+         </div>
+
+        <!-------------------------------------------->
+
+        <div class="button3">
+        <div class="icon">
+          <a href="">
+               <i class="fa-brands fa-linkedin fa-3x"></i>
+           </a>
+          
+        </div>
+        </div>
+
+       <!--------------------------------------------->
+
+       <div class="button4">
+    <div class="icon">
+      <a href="">
+           <i class="fa-brands fa-twitter fa-3x"></i>
+       </a>
+    
+    </div>
+   </div>
+  </div>
+     
+</body>
+</html>
